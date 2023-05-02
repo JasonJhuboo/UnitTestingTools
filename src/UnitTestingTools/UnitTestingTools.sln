@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JhubooSoft.UnitTestingTools", "JhubooSoft.UnitTestingTools\JhubooSoft.UnitTestingTools.csproj", "{C6496563-8ADB-4528-9069-51D7265B2A18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JhubooSoft.UnitTestingTools.Tests", "JhubooSoft.UnitTestingTools.Tests\JhubooSoft.UnitTestingTools.Tests.csproj", "{5C050C76-30AA-424D-9E38-173B6EAE33D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6496563-8ADB-4528-9069-51D7265B2A18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6496563-8ADB-4528-9069-51D7265B2A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6496563-8ADB-4528-9069-51D7265B2A18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6496563-8ADB-4528-9069-51D7265B2A18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C050C76-30AA-424D-9E38-173B6EAE33D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C050C76-30AA-424D-9E38-173B6EAE33D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C050C76-30AA-424D-9E38-173B6EAE33D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C050C76-30AA-424D-9E38-173B6EAE33D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45CEA9B8-BC9E-457C-B949-E6D4711BA977}
+	EndGlobalSection
+EndGlobal
