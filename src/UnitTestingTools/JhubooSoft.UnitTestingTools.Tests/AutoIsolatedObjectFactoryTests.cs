@@ -1,4 +1,5 @@
 ﻿using FakeItEasy;
+using System;
 using Xunit;
 
 namespace JhubooSoft.UnitTestingTools.Tests
@@ -31,9 +32,19 @@ namespace JhubooSoft.UnitTestingTools.Tests
             TestExpect.IsInstanceOfType<TestClass2>(objectUnderTest);
         }
 
+        [Fact]
+        public void AutoFakedObjectFactoryShouldThrowExceptionIfTypeHasMultipleConstructors()
+        {
+            //Arrange
+            AutoFakedObjectFactory<TestClass3> objectFactory = new AutoFakedObjectFactory<TestClass3>();
+
+            //Act / Assert
+            TestExpect.ExceptionOccurred<InvalidOperationException>(() => objectFactory.Create());
+        }
+
         public class TestClass1
         {
-            
+
         }
 
         public class TestClass2
@@ -44,7 +55,23 @@ namespace JhubooSoft.UnitTestingTools.Tests
             {
                 Parameter1 = parameter1;
             }
-                        
+
+        }
+
+        public class TestClass3
+        {
+            public ITestDependency1 Parameter1 { get; }
+
+            public TestClass3(ITestDependency1 parameter1)
+            {
+                Parameter1 = parameter1;
+            }
+
+            public TestClass3(ITestDependency1 parameter1, ITestDependency1 parameter2)
+            {
+                Parameter1 = parameter1;
+            }
+
         }
 
         public interface ITestDependency1
