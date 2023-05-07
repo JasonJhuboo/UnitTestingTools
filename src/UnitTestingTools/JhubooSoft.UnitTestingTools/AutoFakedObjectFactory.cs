@@ -79,7 +79,6 @@ namespace JhubooSoft.UnitTestingTools
             if (parameterInfo?.Length == 0)
                 return Array.Empty<object>();
 
-            //List<object> parameters = new List<object>();
             foreach (ParameterInfo paramaterMetadata in parameterInfo)
             {
                 if (m_PreConstructedConstructorParameters.TryGetValue(paramaterMetadata.ParameterType, out object preConstructedParameter))
